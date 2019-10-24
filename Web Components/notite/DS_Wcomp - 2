@@ -1,0 +1,12 @@
+HTML 5 SEMANTICS:
+
+<abbr title="Hyper Text Markup Language">HTML</abbr> - abreviere
+<b> - bold inainte, in html5 bring to attention  <=>* <strong>
+<i> - italic <=>* <em>
+	*difera sensul pe care il dau elementului marcat, b si i vizual, strong si em semantic
+
+<h1....6> - headers !!! ATENTIE !!! exista o ierarhie intre ele, nu e vorba doar de dimensiune
+	h1 - header
+	h2...6 subheaders
+
+OBS! id e unic in document, class poate aparea de mai multe ori
