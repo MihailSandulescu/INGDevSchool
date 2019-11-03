@@ -12,12 +12,12 @@
 
     <script>
         const contacts = [
-            'Serghei',
-            'Paganini',
-            'Giovani',
-            'Jean Maurer',
-            'Cristoiu',
-            'Nelson'
+            'Alex',
+            'George',
+            'Maria',
+            'Adina',
+            'Georgiana',
+            'Marius'
         ];
         const list = document.getElementById('list');
 
@@ -30,8 +30,28 @@
         contacts.forEach(function (contact) {
             list.innerHTML += '<li>' + contact + '</li>';
         });
+            forEach = higher order function, iar functia parametru/intoarsa se numeste first class function
         */
-       
+
+        /* sau
+        contacts.forEach((contact) => {
+            list.innerHTML += '<li>' + contact + '</li>';
+        });
+        */
+
+        /* sau
+        contacts.forEach(contact => {
+            list.innerHTML += `<li>${contact}'</li>`;  \\ template literal sau string template
+        });
+        */
+
+        //OBS! forEach nu poate intra niciodata in bucla infinita
+
+        /* sau
+        const tags = contacts.map(contact => `<li>${contact}'</li>`);
+        list.innerHTML = tags.join('');
+        */
+
     </script>
 
 </body>

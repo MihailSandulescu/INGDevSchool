@@ -1,0 +1,94 @@
+Separation of concerns
+
+continut =/= stil (!!!)
+
+acelasi continut poate fi prezentat in mai multe moduri, html ft important
+
+CSS
+
+cum utilizam?
+
+<head>
+  <style> </style> <!-- use case pt o singura pagina de dimensiuni reduse, contained  -->
+(sau)
+  <link href="fisier.css"> <!-- cel mai folosit, dar mai lent, deoarece browserul face un request GET pentru fisierul .css (dar dupa primul request, fisierul este cached) -->
+</head>
+
+(sau)
+
+<body>
+  <div style=""></div>
+</body>
+
+style-ul inline se foloseste cand se vrea suprapunere pe anumite cazuri (nu este neaparat indicat, dar avantaje -> cel mai rapid mod de a adauga un stil 
+														-> cel mai rapid randat de browser)
+
+bloc CSS -> format din reguli CSS
+
+css selectors:
+  1. numele elementului (ex. div) -> targets all div elements
+	ex: div {
+		color: #000;
+	    }
+  2. selectorul de clasa, se referentiaza cu punct
+	ex: 
+		html: <div class="cls">
+ 		css:  .cls{} -> selecteaza toate elementele cu clasa respectiva
+	   	       mai specific: div.cls -> selecteaza doar div-urile cu clasa respectiva
+  3. selectorul id, se referentiaza cu #
+	#id div.class (toti descendentii div.class ai lui id) parinte->descendent NU parinte->copil
+	#id,div.class -> elementul cu id-ul id SI elementele div.class 
+	#id>div.cls -> toate divurile cu clasa id aflate pe primul nivel sub elementul cu id-ul id
+  4. html: <div atr="mar"></div>
+     css: div[atr="mar"] {}
+
+	OBS! *= inseamna CONTINE
+
+  5. div:first-child {}  
+  6. div:nth-child(5) {}  -- pseudo-clase
+
+  7. div::selected , div::first-line , div::first-letter etc. -- pseudo-elemente
+
+	BOX MODEL
+
+		         margin
+        	B    O    R    D   E   R
+   	    BO		padding		 BO
+   margin   RD	padding	CONTENT padding  RD    margin
+   	    ER		padding		 ER
+		B    O    R    D   E   R
+  		       	margin
+
+
+	(!) FLEXBOX MODEL (!)
+  	   flexboxfroggy.com
+
+
+JAVASCRIPT
+
+- limbaj de scripting (este interpretat de browser, nu compilat)
+- multi-paradigma (functional, procedural, OO)
+- are tipuri de date implicite, nu explicite
+
+declarare variabile: let, var, const
+	let -> let nu o pune in window
+	var -> var o pune in obiectul window
+	const -> la fel ca let + nu poti modifica ulterior
+
+	scopes: global, local(function), block DAR! javascript nu are block scope
+
+by default: const, pt ca in javascript nu prea ai nevoie sa 'modifici' variabilele declarate
+	( const > let > var , ca utilizare )
+
+primitivele: number, string, boolean, null, undefined
+	null = un tip care contine o singura valoare (null)
+	undefined = idem
+
+	typeof(null) -> object
+
+alte tipuri: object, function
+	typeof(function) = "function"
+	function = un object de tip function
+
+
+
