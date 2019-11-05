@@ -1,0 +1,4 @@
+ion,1234,5800
+alexandra,0000,19
+marcel,5565,1923
+petronela,9524,10000001

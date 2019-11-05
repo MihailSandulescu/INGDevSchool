@@ -1,0 +1,35 @@
+Java Functional Interface:  o interfata cu o singura metoda neimplementata
+
+Lambda: o functie f(x) = x + 1
+
+	() -> sout('...');
+
+	Optional: Optional EMPTY / Optional T )
+	  0..1				      |
+                                              | => primitive de programare functionala
+	Stream                                |
+	 0..N                                 )
+
+	Optional(Integer)
+
+   Effective Java 
+
+FuncProg:
+	.map((x) -> x+2) //mapeaza o "operatie" fiecarei valori din lista respectiva
+	.filter(x) -> x%2 == 0)	 // predicate
+	.forEach(System.out::println) // consumer
+
+	it -> it.getName()
+
+Interfetele functionale:
+
+	Supplier () -> x
+	Consumer (x) -> ()
+	Predicate (x) -> true/false
+	function (x) -> (y)
+		(x,y) -> (z)
+
+streamuri : operatii intermediare && operatii finale. streamul nu se executa decat daca are o operatie finala
+
+	venkat subramanian
+	victor rent -> programare functionala
