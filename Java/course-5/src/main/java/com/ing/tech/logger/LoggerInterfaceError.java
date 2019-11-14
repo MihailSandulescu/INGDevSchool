@@ -1,15 +1,22 @@
 package com.ing.tech.logger;
 
+import com.ing.tech.configuration.DoSomething;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Component
-public class LoggerInterfaceExample2 implements LoggerInterface {
+@Slf4j
+public class LoggerInterfaceError implements LoggerInterface {
 
-    void log() {
+    private DoSomething doSomething;
+
+    public LoggerInterfaceError(DoSomething doSomething) {
+        this.doSomething = doSomething;
     }
 
     @Override
     public void log(String message) {
-
+        log.error(message);
+        doSomething.log();
     }
 }

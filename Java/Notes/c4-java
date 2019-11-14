@@ -1,0 +1,46 @@
+DESIGN PATTERNS
+
+SOLID principles
+Inheritance vs. Composition
+
+1. Strategy
+
+	-> dependency injection
+
+2. Observer
+
+3. Decorator
+
+4. Factory
+
+	-> simple factory
+	-> method factory
+
+5. Singleton
+
+6. Command
+
+7. Adapter
+
+8. Iterator
+
+9. Builder  //implementat in lombok
+	
+	-> fluent API
+
+Carte: Head first into design patterns
+
+OCJP
+
+SPRING
+
+ -> main feature: dependency injection
+
+SPRING-BOOT
+
+ -> plug & play
+ -> auto-confirurari ale spring
+
+Three-layered architecture
+
+

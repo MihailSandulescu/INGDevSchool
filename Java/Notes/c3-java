@@ -16,7 +16,7 @@ Lambda: o functie f(x) = x + 1
 
 FuncProg:
 	.map((x) -> x+2) //mapeaza o "operatie" fiecarei valori din lista respectiva
-	.filter(x) -> x%2 == 0)	 // predicate
+	.filter((x) -> x%2 == 0)	 // predicate
 	.forEach(System.out::println) // consumer
 
 	it -> it.getName()

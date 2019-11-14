@@ -1,4 +1,8 @@
 package com.ing.tech.profile;
 
-public class ExampleImplementation1 {
+import org.springframework.stereotype.Component;
+
+@Component
+public class ExampleImplementation1 implements Example {
+
 }
