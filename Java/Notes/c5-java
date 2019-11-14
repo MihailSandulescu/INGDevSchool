@@ -1,0 +1,10 @@
+Maven
+
+- validate : valideaza pom-ul
+- compile : compileaza pom-ul
+- test 
+- package : pune in target target/artifactId-version.jar
+- install : pune jar-ul in repository
+
+MAVEN CENTRAL
+N/.M2/REPOSITORY
