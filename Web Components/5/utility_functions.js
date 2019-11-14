@@ -5,7 +5,7 @@ function onClickResolution() {
 }
 
 function onClickDate() {
-  const dt = crtDate();
+  const dt = getDate();
   // document.getElementById("crt-date").textContent = dt;
   document.getElementById("info-list").innerHTML += `<li>${dt}</li>`;
 }
@@ -16,7 +16,7 @@ function getResolution() {
 }
 
 // functie care returneaza data curenta
-function crtDate() {
+function getDate() {
   return new Date().toDateString();
 }
 
